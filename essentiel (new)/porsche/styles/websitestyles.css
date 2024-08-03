@@ -1,0 +1,293 @@
+@font-face {
+    font-family: 'PorscheFont';
+    src: url('PorscheRegular.woff2') format('woff2'),
+         url('PorscheRegular.woff') format('woff'),
+         url('PorscheRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Porsche Next', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1a1a1a;
+    overflow-x: hidden;
+}
+.sidepanel{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:0;
+    position:fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+.sidepanel a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidepanel a:hover{
+    color: #f1f1f1;
+}
+.sidepanel .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+.grid1{
+    display:inline-block;   
+    width: 100%;
+    height: 100%;
+    align-items: left;
+    justify-content: left;
+}
+.imgcar{
+    width: 100%;
+    height:auto;
+}
+.grid2{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    align-items: left;
+    justify-content: left;
+}
+.openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover{
+    background-color: #444;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.back-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-cotitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    padding: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.smallmenu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    border:none;
+    background: none;
+    color:white;
+}
+
+.smallmenu:hover {
+    background-color: rgb(25, 42, 42);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.pfp {
+    width: 25px;
+    height: auto;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pfp:hover {
+    background-color: rgb(25, 42, 42);
+    border-radius: 5px;
+}
+
+.titled {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 3vw; /* Changed to match the first code */
+    text-align: center;
+    font-family: 'PorscheFont';
+}
+
+.text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+    bottom: 0px;
+    left: 16px;
+   
+}
+
+.essence {
+    display: flex;
+    justify-content: left;
+    font-size: 60px;
+    margin: 0;
+}
+
+.macan {
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+}
+
+.macan:hover {
+    background-color: grey;
+    border-color: darkgrey;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.pause-button {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.pause {
+    border: 1px solid white;
+    border-color: white;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+@media (min-width: 1536px) {
+    .title {
+        font-size: 1.5vw;
+    }
+ 
+    .smallmenu {
+        font-size: 1vw;
+    }
+
+    .pfp {
+        width: 45px;
+        height: auto;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1536px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {        
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .text-container{
+        /* macan textbox centered extends to resolution*/
+        align-items:center;
+        width: 100%;
+        box-sizing: border-box; /* Include padding and margin in the element's total width and height */
+        overflow: hidden; 
+        left:0;
+    }
+    .macan{
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+
+    .macan {
+        width: 100%;    
+        justify-content: center;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+
+    .macan {
+        width: 100%;    
+        justify-content: center;
+    }
+}

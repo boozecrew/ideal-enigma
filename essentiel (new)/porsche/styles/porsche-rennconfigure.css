@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'PorscheFont';
+    src: url('PorscheRegular.woff2') format('woff2'),
+         url('PorscheRegular.woff') format('woff'),
+         url('PorscheRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family:Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 4vw; /* Responsive font size based on viewport width */
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid-cotitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    padding: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.smallmenu {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.smallmenu:hover {
+    background-color: rgb(25, 42, 42);
+    border-radius: 10px;
+}
+
+.pfp {
+    width: 25px;
+    height: auto;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pfp:hover {
+    background-color: rgb(25, 42, 42);
+    border-radius: 5px;
+}
+
+.titled {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 3vw;
+    text-align: center;
+    font-family:'PorscheFont','arial';
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vh;
+}
+
+
+
+.porscheimg{
+    display:inline-block;
+    width:100%;
+    height:auto;
+    border-radius:20px;
+}
+div .imagecar-container {
+    overflow: auto;
+    white-space: nowrap;
+    width:fit-content;
+}
+div.imagecar-container img{
+    display:inline-block;
+    width:15%;
+    height:auto;
+    border-radius:10px;
+}
+.gt3{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+}
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+div.hori-scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    width:fit-content;  
+}
+
+div.hori-scrollmenu a {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+  }
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    overflow:hidden;
+}
+
+.colormenu{
+    font-size: 2vw;
+}
+
+.black,
+.white,
+.blue,
+.pink
+{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+}
+.menu-price{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vw;
+}

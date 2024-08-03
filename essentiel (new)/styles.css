@@ -1,0 +1,29 @@
+/* Import the Montserrat font family */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+.Model {
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Order {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Touch {
+    color: black;
+    text-decoration: underline;
+}

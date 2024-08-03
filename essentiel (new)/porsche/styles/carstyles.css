@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'PorscheFont';
+    src: url('PorscheRegular.woff2') format('woff2'),
+         url('PorscheRegular.woff') format('woff'),
+         url('PorscheRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family:Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 4vw; /* Responsive font size based on viewport width */
+
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.grid-cotitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    padding: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.smallmenu {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.smallmenu:hover {
+    background-color: rgb(25, 42, 42);
+    border-radius: 10px;
+}
+
+.pfp {
+    width: 25px;
+    height: auto;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pfp:hover {
+    background-color: rgb(25, 42, 42);
+    border-radius: 5px;
+}
+
+.titled {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 3vw;
+    text-align: center;
+    font-family:'PorscheFont';
+}
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.imagecontainer,
+.textcontainer,
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car {
+    max-width: 90%;
+    height: auto;
+}
+
+.gt3rs {
+    font-size: 5vw;
+    margin: 0;
+}
+
+.buttoncontainer {
+    gap: 10px;
+}
+
+.button1,
+.button2 {
+    font-size: 2vw;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+}
+
+.button1:hover {
+    background-color: grey;
+}
+
+.button2 {
+    border: 1px solid black;
+}
+
+.button2:hover {
+    background-color: lightgrey;
+}
+
+.specs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+}
+
+
+.specs-text .text,
+.specs-text .text2,
+.specs-text .accel,
+.specs-text .top {
+    margin: 0;
+}
+
+.speed {
+    font-size: 6vw;
+    font-weight: bold;
+    margin: 0;
+}
+
+.s {
+    font-size: 3vw;
+    color: grey;
+    margin: 0;
+}
+
+.accel,
+.top {
+    font-size: 1.5vw;
+    font-weight: lighter;
+    color: grey;
+    margin: 5px 0;
+}
+
+.frontimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-front {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1536px) {
+   .title{
+       font-size: 1.5vw;
+   }
+
+   .smallmenu{
+       font-size: 1vw;
+   }
+   .pfp{
+       width: 45px;
+       height: auto;
+   }
+   
+}
+
+@media (max-width: 1536px) {
+    .container {
+        /*max-width: 1280px*/
+        width: 100%;
+
+    }
+    
+}
+
+@media (max-width: 1280px) {
+    .container {
+        /*max-width: 1024px*/
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {        
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        /*max-width: 640px;*/    
+        width: 100%;
+
+    }
+    .specs-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        /*max-width: 475px;*/    
+        width: 100%;
+
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        width: 100%;
+    }
+}

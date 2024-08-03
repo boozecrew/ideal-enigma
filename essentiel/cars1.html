@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche</title>
+    <style>
+        @font-face {
+    font-family: 'PorscheFont';
+    src: url('PorscheRegular.woff2') format('woff2'),
+         url('PorscheRegular.woff') format('woff'),
+         url('PorscheRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #1a1a1a;
+    font-family: 'Porsche Next', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.back-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid-cotitle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    padding: 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+.smallmenu {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.smallmenu:hover {
+    background-color: rgb(25, 42, 42);
+    border-radius: 10px;
+}
+
+.pfp {
+    width: 25px;
+    height: auto;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pfp:hover {
+    background-color: rgb(25, 42, 42);
+    border-radius: 5px;
+}
+
+.titled {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 3vw;
+    text-align: center;
+    font-family: 'PorscheFont';
+}
+
+.text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+    bottom: 0px;
+    left: 16px;
+}
+
+.essence {
+    display: flex;
+    justify-content: left;
+    font-size: 60px;
+    width: 100%;
+    margin: 0;
+}
+
+.macan {
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    height: auto;
+    text-align: center;
+}
+
+.macan:hover {
+    background-color: grey;
+    border-color: darkgrey;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.pause-button {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+}
+
+.pause {
+    border: 1px solid white;
+    border-color: white;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+@media (min-width: 1536px) {
+    .title {
+        font-size: 1.5vw;
+    }
+ 
+    .smallmenu {
+        font-size: 1vw;
+    }
+
+    .pfp {
+        width: 45px;
+        height: auto;
+    }
+}
+
+@media (max-width: 1536px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {        
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .macan {
+        width: 100%;    
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+
+    .macan {
+        width: 100%;    
+        justify-content: center;
+    }
+}
+
+@media (max-width: 475px) {
+    .
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <video autoplay loop muted playsinline class="back-video">
+            <source src="porsche/styles/porsche-vid.MP4" type="video/mp4">
+        </video>
+        <div class="content">
+            <div class="grid-cotitle">
+                <div class="container-title">
+                    <div class="smallmenu" onclick="location.href='https://www.porsche.com'">&equiv; Menu</div>
+                    <div class="titled">
+                        <div class="title" onclick="location.href='porsche.html'">PORSCHE</div>
+                    </div>
+                    <div class="profilebox" onclick="location.href='https://identity.porsche.com/u/login/identifier?state=hKFo2SByTjN6d05wR3hka0xXS2hsTk9CalJ3akZobUJaTVdYbqFur3VuaXZlcnNhbC1sb2dpbqN0aWTZIHM5OUlSMS13VWRHUnJnMVU3c1N5Y28yWlJBTEFiRDI0o2NpZNkgVVlzSzAwTXk2YkNxSmRiUWhUUTBQYldtY1NkSUFNaWc&ui_locales=en&ext-country=sg&ext-language=en'">
+                        <img src="porsche/styles/blank-profile-picture.png" class="pfp">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div class="text-container">
+                    <p class="essence">Keep your <br class=""> essence.</p>
+                    <p class="macan" onclick="window.location.href='porsche-car.html'">Discover the new Rennsport.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="porsc.java"></script>
+</body>
+
+</html>

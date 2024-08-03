@@ -1,0 +1,125 @@
+body {
+    font-family: Roboto;
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+}
+
+p {
+    color: black;
+    text-align: left;
+    font-size: 14px;
+}
+
+.video-preview {
+    width: 320px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.search-bar {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(69, 69, 69);
+    font-size: 16px;
+    color: white;
+    background-color: #1a1a1a;
+    margin: 0;
+    z-index: 1;
+    margin: 5px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border: 1px solid rgb(148, 148, 210);
+}
+
+.tweet-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.divpfp {
+    margin-right: 10px;
+}
+
+.pfp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.span {
+    color: rgb(96, 96, 96);
+    font-weight: lighter;
+}
+
+.class {
+    color: rgb(148, 148, 210);
+    text-decoration: underline;
+}
+
+.tweet {
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+.linebreak {
+    margin-bottom: 5px;
+}
+
+.img {
+    margin: 0;
+    width: 300px;
+    height: auto;
+}
+
+.tweet-box {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #6d6d6d;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    margin: 5px;
+    width: fit-content;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.testing {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #424242;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 10px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.tweets {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #1da1f2;
+    border: none;
+    border-radius: 20px;
+    font-weight: bolder;
+}
